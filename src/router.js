@@ -33,7 +33,12 @@ const routes = [
     name: 'Account',
     component: loadPage('AccountPage'),
     beforeEnter: authGuard
-  }
+  },
+  {
+    path: '/houses/:houseId',
+    name: 'HouseDetails',
+    component: loadView('HouseDetailsPage')
+}
 ]
 
 export const router = createRouter({
